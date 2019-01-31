@@ -917,3 +917,23 @@ SyntaxError (/home/agile-abstraction-3130/refactoring-views-with-helpers-lab-onl
   Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
   Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
   Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (37.2ms)
+
+
+Started GET "/songs/new" for 162.224.160.244 at 2019-01-31 08:45:42 +0000
+Cannot render console from 162.224.160.244! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SongsController#new as HTML
+  Rendered songs/_form.html.erb (1.0ms)
+  Rendered songs/new.html.erb within layouts/application (1.6ms)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/home/agile-abstraction-3130/refactoring-views-with-helpers-lab-online-web-sp-000/app/views/songs/_form.html.erb:10: syntax error, unexpected keyword_ensure, expecting keyword_end
+/home/agile-abstraction-3130/refactoring-views-with-helpers-lab-online-web-sp-000/app/views/songs/_form.html.erb:12: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/views/songs/_form.html.erb:10: syntax error, unexpected keyword_ensure, expecting keyword_end
+  app/views/songs/_form.html.erb:12: syntax error, unexpected end-of-input, expecting keyword_end
+  app/views/songs/new.html.erb:3:in `_app_views_songs_new_html_erb__1165246769140236014_5852440'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (36.3ms)
