@@ -2,10 +2,10 @@ class Song < ActiveRecord::Base
   belongs_to :artist
 
   def artist_name
-    if self.artist
-      self.artist.name
-    else
+    if self.artist == nil
       nil
+    else
+      self.artist.name
     end
   end
 
