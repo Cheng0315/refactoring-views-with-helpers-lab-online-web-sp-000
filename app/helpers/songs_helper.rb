@@ -7,6 +7,6 @@ module SongsHelper
       link_to "All Songs", songs_path
      else
        link_to 'Add_Artist', edit_song_path(song)
-    < end
+     end
   end
 end
