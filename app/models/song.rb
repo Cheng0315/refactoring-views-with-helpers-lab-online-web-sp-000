@@ -3,7 +3,7 @@ class Song < ActiveRecord::Base
 
   def artist_name
     if self.artist
-      self.artist.artist_name
+      self.artist.name
     else
       nil
     end
