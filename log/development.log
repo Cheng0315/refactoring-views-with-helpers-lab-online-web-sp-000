@@ -544,3 +544,11 @@ Processing by SongsController#show as HTML
   [1m[35mArtist Load (0.1ms)[0m  SELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT 1  [["id", 1]]
   Rendered songs/show.html.erb within layouts/application (1.2ms)
 Completed 200 OK in 8ms (Views: 6.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/artists/1" for 162.224.160.244 at 2019-01-31 08:30:25 +0000
+Cannot render console from 162.224.160.244! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendered artists/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 4ms (Views: 4.3ms | ActiveRecord: 0.0ms)
